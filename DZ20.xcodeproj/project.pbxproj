@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		2C40AB32292AB4730010A874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40AB31292AB4730010A874 /* AppDelegate.swift */; };
 		2C40AB34292AB4730010A874 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40AB33292AB4730010A874 /* SceneDelegate.swift */; };
-		2C40AB36292AB4730010A874 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40AB35292AB4730010A874 /* ViewController.swift */; };
+		2C40AB36292AB4730010A874 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40AB35292AB4730010A874 /* View.swift */; };
 		2C40AB39292AB4730010A874 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C40AB37292AB4730010A874 /* Main.storyboard */; };
 		2C40AB3B292AB4730010A874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C40AB3A292AB4730010A874 /* Assets.xcassets */; };
 		2C40AB3E292AB4730010A874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C40AB3C292AB4730010A874 /* LaunchScreen.storyboard */; };
+		2C40AB46292ABA520010A874 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40AB45292ABA520010A874 /* Interactor.swift */; };
+		2C40AB48292ABA620010A874 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40AB47292ABA620010A874 /* Presenter.swift */; };
+		2C40AB4A292ABA760010A874 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40AB49292ABA760010A874 /* Entity.swift */; };
+		2C40AB4C292ABA850010A874 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40AB4B292ABA850010A874 /* Router.swift */; };
+		2C40AB4E292AC6450010A874 /* CatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C40AB4D292AC6450010A874 /* CatCell.xib */; };
+		2C40AB50292AC6CB0010A874 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40AB4F292AC6CB0010A874 /* Collection+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C40AB2E292AB4730010A874 /* DZ20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZ20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C40AB31292AB4730010A874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C40AB33292AB4730010A874 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C40AB35292AB4730010A874 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C40AB35292AB4730010A874 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		2C40AB38292AB4730010A874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C40AB3A292AB4730010A874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C40AB3D292AB4730010A874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C40AB3F292AB4730010A874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C40AB45292ABA520010A874 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		2C40AB47292ABA620010A874 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		2C40AB49292ABA760010A874 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		2C40AB4B292ABA850010A874 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2C40AB4D292AC6450010A874 /* CatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatCell.xib; sourceTree = "<group>"; };
+		2C40AB4F292AC6CB0010A874 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +70,14 @@
 			children = (
 				2C40AB31292AB4730010A874 /* AppDelegate.swift */,
 				2C40AB33292AB4730010A874 /* SceneDelegate.swift */,
-				2C40AB35292AB4730010A874 /* ViewController.swift */,
+				2C40AB35292AB4730010A874 /* View.swift */,
+				2C40AB45292ABA520010A874 /* Interactor.swift */,
+				2C40AB47292ABA620010A874 /* Presenter.swift */,
+				2C40AB49292ABA760010A874 /* Entity.swift */,
+				2C40AB4B292ABA850010A874 /* Router.swift */,
+				2C40AB4F292AC6CB0010A874 /* Collection+Extension.swift */,
 				2C40AB37292AB4730010A874 /* Main.storyboard */,
+				2C40AB4D292AC6450010A874 /* CatCell.xib */,
 				2C40AB3A292AB4730010A874 /* Assets.xcassets */,
 				2C40AB3C292AB4730010A874 /* LaunchScreen.storyboard */,
 				2C40AB3F292AB4730010A874 /* Info.plist */,
@@ -125,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C40AB4E292AC6450010A874 /* CatCell.xib in Resources */,
 				2C40AB3E292AB4730010A874 /* LaunchScreen.storyboard in Resources */,
 				2C40AB3B292AB4730010A874 /* Assets.xcassets in Resources */,
 				2C40AB39292AB4730010A874 /* Main.storyboard in Resources */,
@@ -138,9 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C40AB36292AB4730010A874 /* ViewController.swift in Sources */,
+				2C40AB36292AB4730010A874 /* View.swift in Sources */,
+				2C40AB50292AC6CB0010A874 /* Collection+Extension.swift in Sources */,
 				2C40AB32292AB4730010A874 /* AppDelegate.swift in Sources */,
+				2C40AB4A292ABA760010A874 /* Entity.swift in Sources */,
+				2C40AB4C292ABA850010A874 /* Router.swift in Sources */,
+				2C40AB46292ABA520010A874 /* Interactor.swift in Sources */,
 				2C40AB34292AB4730010A874 /* SceneDelegate.swift in Sources */,
+				2C40AB48292ABA620010A874 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
