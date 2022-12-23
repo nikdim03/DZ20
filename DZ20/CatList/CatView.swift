@@ -11,19 +11,21 @@ import UIKit
 //protocol
 //ref to presenter
 
-protocol AnyView {
-    var presenter: AnyPresenter? { get set }
+protocol CatListView {
+    var presenter: CatsListPresenter? { get set }
     func update(with cats: [Cat])
     func update(with error: String)
+    func handleButtonTap()
 }
 
-class CatViewController: UIViewController, AnyView {
+class CatViewController: UIViewController, CatListView {
     @IBOutlet weak var collectionView: UICollectionView!
-    var presenter: AnyPresenter?
+    var presenter: CatsListPresenter?
     var cats = [Cat]()
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "CatsApp"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Present", style: .plain, target: self, action: #selector(handleButtonTap))
         let flowLayout = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         flowLayout.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(flowLayout)
@@ -51,6 +53,9 @@ class CatViewController: UIViewController, AnyView {
     }
     func update(with error: String) {
         super.title = error
+    }
+    @objc func handleButtonTap() {
+        presenter?.handleButtonTap()
     }
 }
 

@@ -11,13 +11,13 @@ import Foundation
 //protocol
 //ref to presenter
 
-protocol AnyInteractor {
-    var presenter: AnyPresenter? { get set }
+protocol CatListInteractor {
+    var presenter: CatsListPresenter? { get set }
     func getCats()
 }
 
-class CatInteractor: AnyInteractor {
-    var presenter: AnyPresenter?
+class CatInteractor: CatListInteractor {
+    var presenter: CatsListPresenter?
     func getCats() {
         var cats = [Cat]()
         cats.append(Cat(name: "Beluga", imageName: "beluga"))
